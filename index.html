@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron Detre Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ffce725738.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="title a">Aaron Detre</h1>
+    <h2 class="subtitle a">Software Engineer</h2>
+    <p>
+      I'm a recent Computer Science graduate from Northeastern University with
+      experience building full-stack web applications and contributing to
+      open-source software used by teachers, students, and researchers. This
+      portfolio highlights some of the projects I've worked on in both
+      professional and academic settings.
+    </p>
+
+    <div class="links">
+      <a href="resume.pdf" target="_blank"
+        ><i class="icon fa-regular fa-file-pdf"></i
+        ><span class="link-text">Resume</span></a
+      >
+      |
+      <a href="mailto:aarondetre@gmail.com"
+        ><i class="icon fa-regular fa-envelope"></i
+        ><span class="link-text">Email</span></a
+      >
+      |
+      <a href="https://github.com/Aaron-Detre" target="_blank"
+        ><i class="icon fa-brands fa-github"></i
+        ><span class="link-text">GitHub</span></a
+      >
+      |
+      <a href="https://www.linkedin.com/in/aarondetre" target="_blank"
+        ><i class="icon fa-brands fa-linkedin"></i
+        ><span class="link-text">LinkedIn</span></a
+      >
+    </div>
+    <hr />
+
+    <div class="project">
+      <h2>WISE Survey Units</h2>
+      <!-- <b>Overview</b> -->
+      <p>
+        Added an option for WISE units to be run as surveys that can be accessed
+        without creating an account.
+      </p>
+      <p>
+        <b>Technologies: </b>Angular, TypeScript, Java Spring Boot, MySQL,
+        Jasmine
+      </p>
+      <b>Highlights</b>
+      <ul>
+        <li>
+          Built a REST API that automatically creates a temporary survey taker
+          account, logs the user into that account, and then launches the unit.
+        </li>
+        <li>
+          Added support for creating and configuring survey runs within the
+          authoring tool and generating shareable survey links.
+        </li>
+        <li>
+          Restricted survey takers to survey-related functionality, preventing
+          access to areas of the platform intended for registered users.
+        </li>
+        <li>
+          Modified the database to support survey runs and survey taker
+          accounts.
+        </li>
+      </ul>
+      <p>
+        <b>Context: </b>Co-op project at the Technology Enhanced Learning in
+        Science group at UC Berkeley.
+      </p>
+      <p>
+        <b>Impact: </b>Allows researchers to use WISE as a platform for creating
+        and distributing surveys.
+      </p>
+    </div>
+    <hr />
+
+    <div class="project">
+      <h2>WISE Auto Translation</h2>
+      <!-- <b>Overview</b> -->
+      <p>
+        Added functionality to automatically translate text fields in WISE units
+        using Amazon Translate.
+      </p>
+      <p>
+        <b>Technologies: </b>Amazon Translate, Angular, TypeScript, Java Spring
+        Boot
+      </p>
+      <b>Highlights</b>
+      <ul>
+        <li>
+          Added buttons to text fields in the authoring tool that automatically
+          translate the text from the default language to the currently selected
+          language.
+        </li>
+        <li>
+          Created a Spring Boot endpoint that receives translation requests from
+          the front-end, passes them along to Amazon Translate, and then returns
+          the translated text.
+        </li>
+        <li>
+          When a manually entered translation already exists, clicking the
+          translate button opens a dialog that allows authors to choose between
+          the existing translation and the machine translation.
+        </li>
+        <li>
+          Added support for translating HTML components while preserving the
+          original structure and tags.
+        </li>
+      </ul>
+      <p>
+        <b>Context: </b>Personal project completed while continuing to
+        contribute to WISE in Spring 2026.
+      </p>
+      <p>
+        <b>Impact: </b>Enables unit authors to easily create multilingual WISE
+        units.
+      </p>
+    </div>
+    <hr />
+
+    <div class="project">
+      <h2>WISE Internationalization Automation</h2>
+      <!-- <b>Overview</b> -->
+      <p>
+        Used GitHub Actions to automatically generate internationalization
+        (i18n) annotations on pull requests.
+      </p>
+      <p><b>Technologies: </b>GitHub Actions</p>
+      <b>Highlights</b>
+      <ul>
+        <li>
+          Automated the generation of i18n annotations on pull requests,
+          removing a manual step from the development workflow.
+        </li>
+        <li>
+          Refactored WISE's test and build workflows into reusable GitHub
+          Actions workflows.
+        </li>
+        <li>
+          Structured workflow dependencies to avoid unnecessary builds when i18n
+          annotation generation or testing fails.
+        </li>
+      </ul>
+      <p>
+        <b>Context: </b>Co-op project at the Technology Enhanced Learning in
+        Science group at UC Berkeley.
+      </p>
+      <p>
+        <b>Impact: </b>Reduced developer overhead by automating a manual step
+        that was required before creating a pull request.
+      </p>
+    </div>
+    <hr />
+
+    <div class="project">
+      <h2>Recipe Social Network</h2>
+      <!-- <b>Overview</b> -->
+      <p>
+        Built a multi-page full-stack recipe sharing social network with user
+        authentication.
+      </p>
+      <p>
+        <b>Technologies: </b>React, Next.js, TypeScript, Redux, Node.js,
+        Express.js, MongoDB
+      </p>
+      <b>Highlights</b>
+      <ul>
+        <li>Implemented user login and sign up.</li>
+        <li>
+          Built a recipe creation form for entering ingredients and
+          instructions.
+        </li>
+        <li>
+          Added an option to make recipes scalable, allowing ingredient
+          quantities to be adjusted based on a multiplier.
+        </li>
+        <li>
+          Enabled users to search for recipes created by other users as well as
+          recipes from an external recipe API.
+        </li>
+        <li>
+          Created a personalized home page feed showing recent recipes from
+          followed users.
+        </li>
+        <li>
+          Implemented recipe remixing, allowing users to modify and personalize
+          existing recipes.
+        </li>
+      </ul>
+      <p>
+        <b>Context: </b> Final project for CS4550 Web Development at
+        Northeastern University.
+      </p>
+    </div>
+    <hr />
+
+    <div class="project">
+      <h2>Programming Language Implementation</h2>
+      <!-- <b>Overview</b> -->
+      <p>
+        Built a system in Java to run a Scheme-based programming language
+        supporting interactions between typed and untyped modules.
+      </p>
+      <p><b>Technologies: </b> Java, JUnit</p>
+      <b>Highlights</b>
+      <ul>
+        <li>
+          Designed an Abstract Syntax Tree (AST) to capture all valid programs
+          in the target language.
+        </li>
+        <li>
+          Built a parser that converts code in the target language into an AST.
+        </li>
+        <li>
+          Built validators that check for duplicate names, improperly formatted
+          import statements, undeclared variables, and type errors.
+        </li>
+        <li>
+          Built the CESK state machine which takes a valid AST and produces an
+          output or a runtime error, utilizing the Strategy pattern to cleanly
+          implement its 20+ unique transition functions.
+        </li>
+        <li>
+          Implemented support for programs combining typed and untyped modules
+          with cross-module imports, enforcing soundness through runtime proxies
+          at module boundaries.
+        </li>
+        <li>
+          Wrote integration tests in the custom programming language and unit
+          tests using JUnit.
+        </li>
+      </ul>
+      <p>
+        <b>Context: </b> Semester project for CS4400 Programming Languages at
+        Northeastern University. Completed with a partner.
+      </p>
+    </div>
+  </body>
+</html>
