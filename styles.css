@@ -1,5 +1,6 @@
 body {
   margin: 2% 25% 5% 25%;
+  font-size: 12pt;
 }
 
 .icon {
@@ -19,10 +20,6 @@ body {
 
 .project {
   margin-bottom: 25px;
-}
-
-.link {
-  margin-bottom: 5px;
 }
 
 .links {
@@ -56,16 +53,4 @@ body {
   .icon {
     display: none;
   }
-}
-
-.a {
-  /* border: 2px solid black; */
-}
-
-body {
-  font-size: 12pt;
-}
-
-img {
-  max-width: 100%;
 }
